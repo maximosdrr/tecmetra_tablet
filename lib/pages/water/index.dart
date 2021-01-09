@@ -39,7 +39,7 @@ class _WaterPageState extends State<WaterPage> {
                           "MEDIÇÃO DO CONSUMO DE ÁGUA",
                           style: TextStyle(
                             color: HexColor.fromHex('#646483'),
-                            fontSize: 20,
+                            fontSize: 18,
                           ),
                         ),
                         onPressed: () {},
@@ -52,7 +52,7 @@ class _WaterPageState extends State<WaterPage> {
                           "ULTIMA MEDIÇÃO: 09/01/2020 ÁS 01:06",
                           style: TextStyle(
                             color: HexColor.fromHex('#646483'),
-                            fontSize: 20,
+                            fontSize: 18,
                           ),
                         ),
                       )

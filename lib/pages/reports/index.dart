@@ -15,7 +15,7 @@ class _ReportsPageState extends State<ReportsPage> {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        height: 900,
+        height: double.infinity,
         color: HexColor.fromHex('#ECF4FC'),
         child: SafeArea(
           child: SingleChildScrollView(
@@ -27,7 +27,7 @@ class _ReportsPageState extends State<ReportsPage> {
                 ),
                 Container(
                   margin: EdgeInsets.only(
-                    left: 10,
+                    left: 30,
                     top: 30,
                   ),
                   child: Row(
@@ -54,11 +54,11 @@ class _ReportsPageState extends State<ReportsPage> {
                 ),
                 Container(
                   margin: EdgeInsets.only(
-                    left: 20,
-                    right: 20,
+                    left: 50,
+                    right: 50,
                     top: 60,
                   ),
-                  height: 450,
+                  height: MediaQuery.of(context).size.height - 300,
                   width: MediaQuery.of(context).size.width,
                   child: MainChart.withSampleData(),
                 )

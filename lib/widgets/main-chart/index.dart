@@ -33,6 +33,12 @@ class MainChart extends StatelessWidget {
         seriesList,
         animate: animate,
         animationDuration: Duration(seconds: 2),
+        layoutConfig: charts.LayoutConfig(
+          leftMarginSpec: charts.MarginSpec.fixedPixel(0),
+          topMarginSpec: charts.MarginSpec.fixedPixel(0),
+          rightMarginSpec: charts.MarginSpec.fixedPixel(0),
+          bottomMarginSpec: charts.MarginSpec.fixedPixel(0),
+        ),
 
         // Set the initial viewport by providing a new AxisSpec with the
         // desired viewport: a starting domain and the data size.
