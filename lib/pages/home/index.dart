@@ -16,6 +16,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    var _screenHeight = MediaQuery.of(context).size.height;
     return Expanded(
       child: SizedBox.expand(
         child: Container(
@@ -24,10 +25,12 @@ class _HomePageState extends State<HomePage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  // Container(
-                  //   padding: EdgeInsets.all(20),
-                  //   child: SearchTextField(),
-                  // ),
+                  _screenHeight > 600
+                      ? Container(
+                          padding: EdgeInsets.all(20),
+                          child: SearchTextField(),
+                        )
+                      : Container(),
                   SafeArea(
                     child: Container(
                       margin: EdgeInsets.only(top: 20),
@@ -36,17 +39,17 @@ class _HomePageState extends State<HomePage> {
                         scrollDirection: Axis.horizontal,
                         children: [
                           Container(
-                            width: MediaQuery.of(context).size.width * 0.32,
+                            width: MediaQuery.of(context).size.width * 0.28,
                             margin: EdgeInsets.only(
                               right: 10,
-                              left: 10,
+                              left: 50,
                             ),
                             child: HomeCardItem(
                               backgroundImage: 'card_bg_1',
                             ),
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width * 0.32,
+                            width: MediaQuery.of(context).size.width * 0.28,
                             margin: EdgeInsets.only(
                               right: 10,
                             ),
@@ -58,10 +61,10 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           Container(
-                            width: MediaQuery.of(context).size.width * 0.32,
+                            width: MediaQuery.of(context).size.width * 0.28,
                             margin: EdgeInsets.only(
-                              right: 10,
-                            ),
+                                // right: 30,
+                                ),
                             child: HomeCardItem(
                               backgroundImage: 'card_bg_3',
                               title: 'Consumo do dia',

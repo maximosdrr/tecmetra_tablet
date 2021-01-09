@@ -42,7 +42,7 @@ class _HomeCardItemState extends State<HomeCardItem> {
               widget.title,
               style: TextStyle(
                 color: Colors.grey[400],
-                fontSize: 26,
+                fontSize: 18,
               ),
             ),
           ),
@@ -53,7 +53,7 @@ class _HomeCardItemState extends State<HomeCardItem> {
               widget.value,
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 32,
+                fontSize: 26,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -64,7 +64,7 @@ class _HomeCardItemState extends State<HomeCardItem> {
             child: Icon(
               widget.icon,
               color: Colors.white,
-              size: 48,
+              size: 32,
             ),
           )
         ],

@@ -218,7 +218,7 @@ class _DashboardPageState extends State<DashboardPage> {
                                 color: Colors.grey,
                               ),
                               selectedIcon: Icon(
-                                Icons.dashboard,
+                                Icons.bar_chart,
                                 color: Colors.white,
                               ),
                               label: Text(
